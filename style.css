@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+}
+
+body{
+    background-image: linear-gradient(135deg,#7500FF, #BF55FF, #FF0360, #F02CEF, #FF0360, #BF55FF, #7500FF );
+    background-size: 500%;
+    animation: fanimado 60s infinite;
+}
+.contenedor{
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+}
+
+p{
+    font-size: xx-large;
+    padding: 5%;
+}
+
+button{
+    font-size: xx-large;
+    padding: 0.75em;
+}
+
+#yesBtn{
+    transform: translate(-100%,0);
+}
+
+#noBtn{
+    position: absolute;
+}
+
+@keyframes animat {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes fanimado{
+    0%{
+        background-image: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+.centrardiv {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.centrarbtn {
+background: red;
+width: 120px;
+}
+
+.btn-no {background-image: linear-gradient(to right, #ee0979 0%, #ff6a00  51%, #ee0979  100%)}
+.btn-no {
+	font-size: xx-large;
+	position: absolute;
+    padding: 5px 10px;
+    text-align: center;
+    background-size: 200% auto;
+    color: white;            
+    border-radius: 10px;
+}
+
+.btn-no:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+} 
+
+.btn-yes {background-image: linear-gradient(to right, #0cebeb 0%, #20e3b2  51%, #0cebeb  100%)}
+.btn-yes {
+	font-size: xx-large;
+	position: absolute;
+    padding: 5px 10px;
+    background-size: 200% auto;
+	color: white;            
+    border-radius: 10px;
+}
+
+.btn-yes:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.scroll
+{
+    overflow-x:scroll;
+    overflow-y:hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
